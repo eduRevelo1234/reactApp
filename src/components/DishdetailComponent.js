@@ -28,6 +28,7 @@ class CommentForm extends Component {
         this.toggleModal();
         this.props.postComment(this.props.dishId, values.rating, values.author, values.comment);
     }
+    
 render(){
     const required = (val) => val && val.length;
     const maxLength = (len) => (val) => !(val) || (val.length <= len);
